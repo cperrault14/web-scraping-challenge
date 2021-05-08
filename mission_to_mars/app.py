@@ -12,7 +12,7 @@ def index():
 
     mars_info_dict = mongo.db.mars_info_dict.find_one()
 
-    # Return template and data
+    # Render an index.html template and pass it the data from the database
     return render_template("index.html", mars_info_dict=mars_info_dict)
 
 @app.route("/scrape")

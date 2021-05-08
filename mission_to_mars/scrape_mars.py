@@ -122,9 +122,11 @@ def scrape():
         hemisphere_image_urls.append({"title":title,"img_url":pic_href})
 
 
-    mars_info_dict = {"news_title":news_title,"news_paragraph":news_p,"featured_image":featured_image_url,
+    mars_info_dict = {"news_title":news_title,"news_p":news_p,"featured_image_url":featured_image_url,
     "mars_facts":html_table,"hemisphere_img":hemisphere_image_urls}
 
-    browser.quit()
+    print(mars_info_dict)
 
-    return mars_info_dict
+    # browser.quit()
+
+    # return mars_info_dict
